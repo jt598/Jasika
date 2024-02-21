@@ -1,0 +1,221 @@
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+/* MENU BAR*/
+.nav-container{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    z-index: 200;
+}
+
+.nav-menu{
+    display: flex;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+}
+
+.Home {
+    height: 30px;
+    width: 20vw;
+    background-color:#E8B8CE;
+    position: relative;
+    
+}
+.Home h1 {
+    font-size: 1rem ;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color:#090081;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+.About {
+    height: 30px;
+    width: 20vw;
+    background-color:#E8B8CE;
+    position: relative;
+}
+.About h1 {
+    font-size: 1rem ;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color:#090081;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+.Projects {
+    height: 30px;
+    width: 20vw;
+    background-color:#E8B8CE;
+    position: relative;
+}
+.Projects h1 {
+    font-size: 1rem ;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color:#090081;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+.Contact {
+    height: 30px;
+    width: 20vw;
+    background-color:#E8B8CE;
+    position: relative;
+}
+.Contact h1 {
+    font-size: 1rem ;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color:#090081;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+
+section{
+    height: 110vh;
+    display: flex;
+}
+
+
+.one{
+    background-image: url(/My_Portfolio/image/lofi_comp.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.background-text{
+    position: relative;
+    font-size: 150px;
+    top: 40%;
+    font-family: "Poppins",sans-serif;
+}
+
+.overlay-text{
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Great Vibes",sans-serif;
+    color: #ff0000;
+    font-size: 100px;
+}
+
+
+/*ABOUT ME*/
+.avatar{
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+
+/*SECTION 2 - ABOUT ME*/
+
+
+
+.container2{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.skills{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.html{
+    width: 90%; background-color: lavender;
+}
+.css{
+    width: 80%; background-color: lavender;
+}
+.js{
+    width: 65%; background-color: lavender;
+}
+.python{
+    width: 90%; background-color: lavender;
+}
+
+
+
+
+/*Contact*/
+
+.four{
+    background-color: aliceblue;
+}
+input[type=text], select,textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-sizing: border-box;
+    left: 200px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    resize: vertical;
+    position: relative;
+}
+
+input[type=submit]:hover{
+    background-color: white;
+   
+}
+
+label{
+    color: black;
+    left: 200px;
+    top: 30px;
+    position: relative;
+}
+
+
+
+
+
+
+/*footer section*/
+footer{
+    background-color: lavender;
+    text-align: center;
+    padding: 3px;
+    margin: 0px;
+}
