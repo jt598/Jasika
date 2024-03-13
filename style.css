@@ -1,0 +1,205 @@
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+
+html{
+    background-color: hsl(289, 54%, 10%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ccc;
+}
+h1{
+    word-break: break-all;
+}
+
+
+/*topnav*/
+/*Create a top navigation bar with a black background color  */
+.topnav{
+    background-color:hsl(289, 54%, 10%);
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a{
+    float: left;
+    color: #ffffff ;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+}
+/* Change the color of links on hover */
+.topnav a:hover{
+    background-color: none;
+    color: rgb(255, 0, 0);
+}
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split{
+    float: right;
+    background-color: hsl(289, 54%, 10%);
+    color: #ffffff;
+}
+.topnav a.split:hover{
+    color: rgb(255, 0, 0);
+}
+
+
+/*home page*/
+
+section#Home{
+    text-align: center;
+    padding-top: 50px;
+   
+}
+section#Home img{
+    border-radius: 100%;
+    max-width: 50%;
+    max-height: auto;
+}
+/*about me*/
+.about-description{
+    float: inline-start;
+    width: 50%;
+}
+.about-description p{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.about-content:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+/*project*/
+
+
+#slideshow{
+    overflow: hidden;
+    height: 510px;
+    width: 900px;
+    margin: 0 auto;
+    border-radius: 10%;
+    text-align: center;
+    
+}
+
+.slide{
+    float: left;
+    height: 510px;
+    width: 900px;
+}
+
+.slide-wrapper{
+    width: calc(900px * 4);
+    animation: slide 10s ease infinite;
+}
+
+.slide:nth-child(1){
+    background: green;    
+}
+
+.slide:nth-child(2){
+    background: pink;
+}
+
+.slide:nth-child(3){
+    background: red;
+}
+.slide:nth-child(4){
+    background: yellow;
+}
+/* Define the animation 
+for the slideshow */
+@keyframes slide {
+   
+    /* Calculate the margin-left for 
+      each of the slides */
+      20% {
+        margin-left: 0px;
+      }
+     
+      40% {
+        margin-left: calc(-900px * 1);
+      }
+     
+      60% {
+        margin-left: calc(-900px * 2);
+      }
+     
+      80% {
+        margin-left: calc(-900px * 3);
+      }
+}
+
+hr{
+    width: 50%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #ccc;
+}
+.row{
+    margin: 20px  0px; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.row, 
+.row >.column{
+    padding: 10px; 
+}
+
+.column{ 
+    width: 30%;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.content{
+    background-color:  hsl(289, 69%, 17%);
+    padding: 25px;
+    border-radius: 5%;
+    
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+/*project grid layout a*/
+a{
+    text-decoration: none;/* Remove the underline */
+    color: #ccc;
+}
+/* Styling for the link when hovered */
+a:hover {
+    color: red; /* Change color to red on hover */
+}
+
+/* Styling for the link when clicked */
+a:active {
+    color: red; /* Change color to red when clicked */
+}
