@@ -30,20 +30,9 @@ def draw_bent_line():
     bend_turtle.forward(90)#it draws where the turtle.left says to draw
 
     bend_turtle.penup()
-    
-    bend_turtle.forward(-145)#where the second hand line will start
+    bend_turtle.forward(-128)
     bend_turtle.pendown()
     bend_turtle.left(45)
-    bend_turtle.forward(75) #lenght of line
-    bend_turtle.left(45)
-    bend_turtle.forward(50)
-    #the other hand going up 
-    bend_turtle.penup()
-    bend_turtle.forward(65)
-    
-    bend_turtle.pendown()
-    #bend_turtle.left(-250)
-    bend_turtle.right(10)
     bend_turtle.forward(90)
     
 # Move the turtle to the starting position
