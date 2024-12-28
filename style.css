@@ -1,7 +1,39 @@
 body{
-    background-color: rgb(32, 30, 54);
+    background-color: #201e36;
+    /*background-image: url('image/wallpaper.png');
+    background-size: contain;*/
 }
 
+.welcome{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+.line-1{
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    text-align: center;
+    /*height: 50vh;*/
+    margin: 0 auto;
+    font-size: 300%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgb(98, 93, 161);;
+    letter-spacing: .15em;
+    width: 0;
+    animation: typing 4.5s steps(12) forwards, blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing{
+    from{width: 0%}
+    to{width: 39%}
+}
+@keyframes blink-caret{
+    from, to {border-right-color:transparent}
+    20% {border-right-color: rgb(98, 93, 161) }
+}
 .navbar{
     background-color: rgb(32, 30, 54);
     position: sticky;
@@ -44,9 +76,43 @@ body{
 .icons-links:hover svg{
     fill:rgb(98, 93, 161);
 }
-
-.About, .Project, .footer{
+.pb-2{
+    text-align: center;
+}
+#about-me h2{
+    font-size: 2em;
     color: white;
+}
+
+#about-me p{
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+.gif d-flex align-items-center justify-content-between{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gif-container img{
+    height: auto;
+    max-width: 100%;
+}
+
+.text-container{
+   max-width: 600px;
+   font-size: 1.1rem;
+   line-height: 2.6;
+}
+
+.About, .Project,.welcome{
+    color: rgb(238, 234, 239);
+    
 }
 
 .bi:hover {
@@ -56,8 +122,12 @@ body{
 
 .card{
     background-color: rgb(164, 160, 205) !important;
+    
 
 }
 .footer{
     text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    position: relative;
 }
